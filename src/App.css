@@ -1,0 +1,121 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 64px;
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: lightgray;
+}
+
+.bio {
+  text-align: center;
+  color: lightgray;
+  margin-top: 16px;
+}
+
+.textarea {
+  margin-top: 16px;
+}
+
+.card {
+  background-color: #303030;
+}
+
+.address {
+  color: #808080;
+}
+
+.message {
+  color: white;
+  background-color: transparent;
+}
+
+.time {
+  font-size: 70%;
+  color: #808080;
+  text-align: end;
+}
+
+.wave {
+  margin-top: 16px;
+}
+
+.waveButton {
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: #ffc83d;
+  color: #141414;
+}
+
+.load-9 {
+  color: lightgray;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.spinner {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+}
+
+.bubble-1,
+.bubble-2 {
+  position: absolute;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: #ffc83d;
+}
+
+.bubble-2 {
+  top: auto;
+  bottom: 0;
+}
+.l-9 {
+  animation-delay: 1.44s;
+}
+.load-9 .spinner {
+  animation: loadingI 2s linear infinite;
+}
+.load-9 .bubble-1,
+.load-9 .bubble-2 {
+  animation: bounce 2s ease-in-out infinite;
+}
+.load-9 .bubble-2 {
+  animation-delay: -1s;
+}
+
+@keyframes loadingI {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
